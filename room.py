@@ -18,6 +18,9 @@ class Room:
     
     def __str__(self):
         return str(self.__class__) + ": " + str(self.__dict__)
+
+    def __eq__(self, other):
+        self.name == other
     
     def loadRoom(self, gameName, roomName):
         roomPath = './saved_games/' + gameName + '/rooms/' + roomName + '.txt'
@@ -30,20 +33,22 @@ class Room:
                     words = re.split("[:,]+", line)
                     words = [x.strip() for x in words]
                     roomData = []
-                    if len(words) > 1 and words[1] != '':
+                    if len(words) > 1:
                         for x in words[1:]:
-                            myFeature = Feature()
-                            myFeature.loadFeature(gameName, x)
-                            roomData.append(myFeature)
+                            if x != '':
+                                myFeature = Feature()
+                                myFeature.loadFeature(gameName, x)
+                                roomData.append(myFeature)
                 elif 'pickupObjects' in line:
                     words = re.split("[:,]+", line)
                     words = [x.strip() for x in words]
                     roomData = []
-                    if len(words) > 1 and words[1] != '':
+                    if len(words) > 1:
                         for x in words[1:]:
-                            myObject = Obj()
-                            myObject.loadObject(gameName, x)
-                            roomData.append(myObject)
+                            if x != '':
+                                myObject = Obj()
+                                myObject.loadObject(gameName, x)
+                                roomData.append(myObject)
                 else:
                     words = re.split("[:]+", line)
                     words = [x.strip() for x in words]
@@ -56,8 +61,8 @@ class Room:
                         roomData = words[1]
                 setattr(self, words[0], roomData)
     
-    def markVisited(self, gameName, roomName):
-        roomPath = './saved_games/' + gameName + '/rooms/' + roomName + '.txt'
+    def markVisited(self, gameName):
+        roomPath = './saved_games/' + gameName + '/rooms/' + self.name + '.txt'
         if os.path.exists(roomPath) == False:
             return -1
         else:
@@ -67,48 +72,6 @@ class Room:
             outputRoom = open(roomPath, 'w')
             outputRoom.write(data)
             self.visited = True
-    
-    def dropItemInRoom(self, gameName, roomName, objectName):
-        roomPath = './saved_games/' + gameName + '/rooms/' + roomName + '.txt'
-        if os.path.exists(roomPath) == False:
-            return -1
-        else:
-            with open(roomPath, "a") as roomFile:
-                addObject = ", " + objectName
-                roomFile.write(addObject)
-            self.pickupObjects.append(objectName)
-
-    def pickupItemInRoom(self, gameName, roomName, objectName):
-        roomPath = './saved_games/' + gameName + '/rooms/' + roomName + '.txt'
-        if os.path.exists(roomPath) == False:
-            return -1
-        elif objectName in self.pickupObjects:
-            with open(roomPath, 'r') as inputRoom:
-                lines = inputRoom.readlines()
-            with open(roomPath, "w") as inputRoom:
-                for line in lines:
-                    words = re.split("[:,]+", line)
-                    words = [x.strip() for x in words]
-                    print words
-                    if words[0] == 'pickupObjects':
-                        words.remove(objectName)
-                        newline = words[0] + ':'
-                        count = 1
-                        for item in words[1:]:
-                            if count == len(words) - 1:
-                                newline += ' ' + item
-                            else:
-                                newline += ' ' + item + ','
-                            count += 1
-                        inputRoom.write(newline)
-                    else:
-                        inputRoom.write(line)
-            self.pickupObjects.remove(objectName)
-        else:
-            return -1
-
-
-
 
 myRoom = Room()
 

@@ -1,4 +1,0 @@
-name: testfeature
-obvsText: You are looking at the altar
-actionText: push, You push the altar, pull, you pull the alar
-allowedActions: push

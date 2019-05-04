@@ -1,4 +1,0 @@
-name: testfeature2
-obvsText: looking at pew
-actionText: push, You push the pew, pull, you pull the pew
-allowedActions: push, pull

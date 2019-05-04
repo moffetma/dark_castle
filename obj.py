@@ -14,6 +14,9 @@ class Obj:
     
     def __str__(self):
         return str(self.__class__) + ": " + str(self.__dict__)
+
+    def __eq__(self, other):
+        self.name == other
     
     def loadObject(self, gameName, objectName):
         objectPath = './saved_games/' + gameName + '/objects/' + objectName + '.txt'

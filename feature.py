@@ -10,6 +10,9 @@ class Feature:
     
     def __str__(self):
         return str(self.__class__) + ": " + str(self.__dict__)
+    
+    def __eq__(self, other):
+        self.name == other
 
     def loadFeature(self, gameName, featureName):
         featurePath = './saved_games/' + gameName + '/features/' + featureName + '.txt'
@@ -23,18 +26,19 @@ class Feature:
                     words = [x.strip() for x in words]
                     counter = 1
                     featureData = []
-                    if len(words) > 1 and words[1] != '':
+                    if len(words) > 1:
                         for x in words[1:]:
-                            if counter & 1:
+                            if counter & 1 and x != '':
                                 featureData.append((x, words[counter+1]))
                             counter += 1
                 elif 'allowedActions' in line:
                     words = re.split("[:,]+", line)
                     words = [x.strip() for x in words]
                     featureData = []
-                    if len(words) > 1 and words[1] != '':
+                    if len(words) > 1:
                         for x in words[1:]:
-                            featureData.append(x)
+                            if x != '':
+                                featureData.append(x)
                 else:
                     words = re.split("[:]+", line)
                     words = [x.strip() for x in words]

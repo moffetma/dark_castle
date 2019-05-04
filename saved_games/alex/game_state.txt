@@ -1,3 +1,0 @@
-name: alex
-currentRoom: testroom
-inventory: testobject2
