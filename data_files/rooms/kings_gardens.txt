@@ -1,0 +1,10 @@
+name: kings_gardens
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: none
+south: kings_bedchambers
+east: none
+west: none
+visited: False
+features: dirt_mound, dead_tulip
+pickupObjects: jeweled_pendant

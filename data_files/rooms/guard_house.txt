@@ -1,0 +1,10 @@
+name: guard_house
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: barracks
+south: none
+east: none
+west: castle_gate
+visited: False
+features: ledger, pack
+pickupObjects: rusty_key

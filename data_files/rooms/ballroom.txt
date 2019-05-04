@@ -1,0 +1,10 @@
+name: ballroom
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: scribes_room
+south: none
+east: library
+west: great_hall
+visited: False
+features: ball_gown, violin
+pickupObjects:

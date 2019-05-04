@@ -1,0 +1,10 @@
+name: chapel
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: none
+south: library
+east: observatory
+west: scribes_room
+visited: False
+features: altar, pew
+pickupObjects:

@@ -1,0 +1,8 @@
+name: testobjec2
+roomText: This is object2 room text
+obvsText: This is the looking at text pbject2
+effectText: You killed the room!
+roomWithEffect: barracks
+actionText: eat, you can't eat this
+allowedActions: eat
+dropped: False

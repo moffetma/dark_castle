@@ -1,0 +1,4 @@
+name: ball_gown
+obvsText:
+actionText:
+allowedActions:

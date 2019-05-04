@@ -1,0 +1,4 @@
+name: chess_board
+obvsText:
+actionText:
+allowedActions: play

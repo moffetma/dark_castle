@@ -1,0 +1,10 @@
+name: kings_bedchambers
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: kings_gardens
+south: none
+east: throne_room
+west: none
+visited: False
+features: bed, journal
+pickupObjects:

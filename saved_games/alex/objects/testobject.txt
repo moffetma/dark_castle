@@ -1,0 +1,8 @@
+name: testobject
+roomText: This is the room text
+obvsText: This is the looking at text
+effectText: You lit the room!
+roomWithEffect: dungeon
+actionText:
+allowedActions:
+dropped: False
