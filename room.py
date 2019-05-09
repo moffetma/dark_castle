@@ -73,9 +73,12 @@ class Room:
             outputRoom.write(data)
             self.visited = True
 
-myRoom = Room()
+# myRoom = Room()
 
-myRoom.loadRoom('alex', 'testroom')
+# myRoom.loadRoom('alex', 'castle_gate')
+
+
+# print(myRoom.longForm)
 
 
 

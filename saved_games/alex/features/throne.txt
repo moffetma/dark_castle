@@ -1,0 +1,4 @@
+name: throne
+obvsText:
+actionText:
+allowedActions: sit

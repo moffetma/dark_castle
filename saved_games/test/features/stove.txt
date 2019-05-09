@@ -1,0 +1,4 @@
+name: stove
+obvsText:
+actionText:
+allowedActions: 

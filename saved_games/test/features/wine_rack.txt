@@ -1,0 +1,4 @@
+name: wine_rack
+obvsText:
+actionText:
+allowedActions:

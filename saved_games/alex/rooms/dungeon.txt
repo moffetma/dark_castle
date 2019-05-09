@@ -1,0 +1,10 @@
+name: dungeon
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: none
+south: none
+east: none
+west: barracks
+visited: False
+features: skeleton, cell_door
+pickupObjects:

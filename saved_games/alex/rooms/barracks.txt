@@ -1,0 +1,10 @@
+name: barracks
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: none
+south: guard_house
+east: dungeon
+west: bailey
+visited: False
+features: greatsword, chest
+pickupObjects:

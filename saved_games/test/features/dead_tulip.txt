@@ -1,0 +1,4 @@
+name: dead_tulip
+obvsText:
+actionText:
+allowedActions:

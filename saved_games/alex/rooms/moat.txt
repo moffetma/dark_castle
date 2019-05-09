@@ -1,0 +1,10 @@
+name: moat
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: none
+south: none
+east: servants_quarters
+west: none
+visited: False
+features: grave, water
+pickupObjects:

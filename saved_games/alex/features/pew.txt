@@ -1,0 +1,4 @@
+name: pew
+obvsText:
+actionText:
+allowedActions: sit

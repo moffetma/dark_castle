@@ -1,0 +1,4 @@
+name: grave
+obvsText:
+actionText:
+allowedActions: read

@@ -1,0 +1,8 @@
+name: mutton
+roomText:
+obvsText:
+effectText:
+roomWithEffect:
+actionText: 
+allowedActions: eat
+dropped: False

@@ -1,0 +1,10 @@
+name: hidden_chamber
+longForm: You win!
+shortForm: This is the shortform description
+north: none
+south: throne_room
+east: none
+west: none
+visited: False
+features:
+pickupObjects:

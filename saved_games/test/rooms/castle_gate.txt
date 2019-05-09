@@ -1,0 +1,10 @@
+name: castle_gate
+longForm: Welcome adventurer. Through the mist you see a full moon in the distance. The bright moon is illuminating an ominous structure. In front of you stands a dark castle. Ancient and abandoned, treasure lies hidden deep within for those brave enough to enter. To the north through the gates you see the Bailey, and to the eastern side you see the entrance to the Guard House. Do you dare enter?
+shortForm: The castle gate looms in front of you. To the north through the gates you see the Bailey and to the east the entrance to the Guard House.
+north: bailey
+south: none
+east: guard_house
+west: none
+visited: True
+features: wooden_sign, crumbling_stones
+pickupObjects:

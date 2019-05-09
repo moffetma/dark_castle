@@ -128,3 +128,23 @@ class gameState:
             self.saveGame()
         else:
             return -1
+
+# myGameState = gameState()
+
+# myGameState.newGame("max")
+
+#myGameState.loadGame("alex")
+# print(myGameState.inventory)
+#print(myGameState.currentRoom.longForm)
+# myGameState.currentRoom.markVisited('alex')
+
+#if (myGameState.currentRoom.visited == False):
+ #   print(myGameState.currentRoom.longForm)
+#else:
+ #   print(myGameState.currentRoom.shortForm)
+
+#for feature in myGameState.currentRoom.features:
+#    print ("You see a " + feature.name + " here")
+
+
+

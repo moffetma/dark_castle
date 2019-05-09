@@ -1,0 +1,10 @@
+name: bailey
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: great_hall
+south: castle_gate
+east: barracks
+west: servants_quarters
+visited: True
+features: plaque, bench
+pickupObjects:

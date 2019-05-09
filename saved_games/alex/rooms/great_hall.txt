@@ -1,0 +1,10 @@
+name: great_hall
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: throne_room
+south: bailey
+east: ballroom
+west: kitchen
+visited: False
+features: wine_goblet, painting
+pickupObjects:

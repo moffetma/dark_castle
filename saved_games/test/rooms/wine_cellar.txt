@@ -1,0 +1,10 @@
+name: wine_cellar
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: none
+south: none
+east: kitchen
+west: none
+visited: False
+features: wine_rack, barrel
+pickupObjects: aged_wine

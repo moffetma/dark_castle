@@ -1,0 +1,8 @@
+name: mirror
+roomText:
+obvsText:
+effectText:
+roomWithEffect:
+actionText: 
+allowedActions:
+dropped: False

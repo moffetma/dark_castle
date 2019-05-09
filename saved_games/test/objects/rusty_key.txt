@@ -1,0 +1,8 @@
+name: rusty_key
+roomText:
+obvsText:
+effectText:
+roomWithEffect:
+actionText: 
+allowedActions:
+dropped: False
