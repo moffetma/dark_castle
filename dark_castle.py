@@ -43,6 +43,11 @@ def goToRoom(direction):
 
 def look():
 	print(myGameState.currentRoom.longForm)
+	for i in range (len(myGameState.currentRoom.features)):
+		if myGameState.currentRoom.features[i].name != "" and myGameState.currentRoom.features[i].name[-1] != 's':
+			print("You see a " + myGameState.currentRoom.features[i].name + " here")
+		else:
+			print("You see some " + myGameState.currentRoom.features[i].name + " here")
 
 title_screen = "dark_castle_title.txt"
 
@@ -63,11 +68,8 @@ else:
 		print("No game with that name exists!")
 		gameName = input("Enter the saved game name to load: ")
 
-if myGameState.currentRoom.visited == False:
-	print(myGameState.currentRoom.longForm)
-else:
-	print(myGameState.currentRoom.shortForm)
-myGameState.currentRoom.markVisited(gameName)
+
+moveRoom(myGameState.currentRoom.name)
 
 
 while (playerIsAlive == True and gameWon == False): 
