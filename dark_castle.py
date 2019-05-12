@@ -27,6 +27,12 @@ def moveRoom(roomName):
 		print(myGameState.currentRoom.longForm)
 	else:
 		print(myGameState.currentRoom.shortForm)
+	for i in range (len(myGameState.currentRoom.features)):
+		if myGameState.currentRoom.features[i].name != "" and myGameState.currentRoom.features[i].name[-1] != 's':
+			print("You see a " + myGameState.currentRoom.features[i].name + " here")
+		else:
+			print("You see some " + myGameState.currentRoom.features[i].name + " here")
+
 	myGameState.currentRoom.markVisited(gameName)
 
 def goToRoom(direction):
