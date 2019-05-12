@@ -5,6 +5,6 @@ north: none
 south: guard_house
 east: dungeon
 west: bailey
-visited: False
+visited: True
 features: greatsword, chest
 pickupObjects:

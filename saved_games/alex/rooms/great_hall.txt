@@ -5,6 +5,6 @@ north: throne_room
 south: bailey
 east: ballroom
 west: kitchen
-visited: False
+visited: True
 features: wine_goblet, painting
 pickupObjects:

@@ -63,42 +63,24 @@ else:
 	print(myGameState.currentRoom.shortForm)
 myGameState.currentRoom.markVisited(gameName)
 
-print ("GO NORTH")
 
-# print(getattr(myGameState.currentRoom, "east"))
-#moveRoom("bailey")
+while (playerIsAlive == True and gameWon == False): 
 
-#print ("GO SOUTH")
+	command = input("> ")
 
-#moveRoom("castle_gate")
+	myCommand = command.lower()
 
-#print(myGameState.currentRoom.name)
+	while(myCommand != 'north' and myCommand != 'south' and myCommand != 'east' and myCommand != 'west' and myCommand != 'look' and myCommand!='quit'):
+		print("I don't understand that")
+		myCommand = input("> ")
+		myCommand = myCommand.lower()
 
-goToRoom("north")
-goToRoom("south")
-look()
-#myGameState.currentRoom.loadRoom(gameName,"bailey")
+	if(myCommand == 'north' or myCommand == 'south' or myCommand == 'east' or myCommand == 'west'):
+		goToRoom(myCommand)
 
-#if myGameState.currentRoom.visited == False:
-#	print(myGameState.currentRoom.longForm)
-#else:
-#	print(myGameState.currentRoom.shortForm)
-#myGameState.currentRoom.markVisited(gameName)
+	elif myCommand == 'look':
+		look()
+	
+	elif myCommand == 'quit':
+		exit()
 
-print ("GO SOUTH")
-
-#myGameState.currentRoom.loadRoom(gameName,"castle_gate")
-
-#if myGameState.currentRoom.visited == False:
-#	print(myGameState.currentRoom.longForm)
-#else:
-#	print(myGameState.currentRoom.shortForm)
-
-print ("GO NORTH")
-
-#myGameState.currentRoom.loadRoom(gameName,"bailey")
-
-#if myGameState.currentRoom.visited == False:
-#	print(myGameState.currentRoom.longForm)
-#else:
-#	print(myGameState.currentRoom.shortForm)
