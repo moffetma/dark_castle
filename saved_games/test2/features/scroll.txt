@@ -1,0 +1,4 @@
+name: scroll
+obvsText:
+actionText:
+allowedActions: read

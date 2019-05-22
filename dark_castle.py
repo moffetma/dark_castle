@@ -27,11 +27,11 @@ def moveRoom(roomName):
 		print(myGameState.currentRoom.longForm)
 	else:
 		print(myGameState.currentRoom.shortForm)
-	for i in range (len(myGameState.currentRoom.features)):
-		if myGameState.currentRoom.features[i].name != "" and myGameState.currentRoom.features[i].name[-1] != 's':
-			print("You see a " + myGameState.currentRoom.features[i].name + " here")
+	for i in range (len(myGameState.currentRoom.pickupObjects)):
+		if myGameState.currentRoom.pickupObjects[i].name != "" and myGameState.currentRoom.pickupObjects[i].name[-1] != 's':
+			print("You see a " + myGameState.currentRoom.pickupObjects[i].name + " here")
 		else:
-			print("You see some " + myGameState.currentRoom.features[i].name + " here")
+			print("You see some " + myGameState.currentRoom.pickupObjects[i].name + " here")
 
 	myGameState.currentRoom.markVisited(gameName)
 
@@ -43,11 +43,11 @@ def goToRoom(direction):
 
 def look():
 	print(myGameState.currentRoom.longForm)
-	for i in range (len(myGameState.currentRoom.features)):
-		if myGameState.currentRoom.features[i].name != "" and myGameState.currentRoom.features[i].name[-1] != 's':
-			print("You see a " + myGameState.currentRoom.features[i].name + " here")
+	for i in range (len(myGameState.currentRoom.pickupObjects)):
+		if myGameState.currentRoom.pickupObjects[i].name != "" and myGameState.currentRoom.pickupObjects[i].name[-1] != 's':
+			print("You see a " + myGameState.currentRoom.pickupObjects[i].name + " here")
 		else:
-			print("You see some " + myGameState.currentRoom.features[i].name + " here")
+			print("You see some " + myGameState.currentRoom.pickupObjects[i].name + " here")
 
 title_screen = "dark_castle_title.txt"
 

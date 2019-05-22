@@ -1,10 +1,10 @@
-name: dungeon
+name: guard_house
 longForm: This is the longform description
 shortForm: This is the shortform description
-north: none
+north: barracks
 south: none
 east: none
-west: barracks
+west: castle_gate
 visited: True
-features: skeleton, cell_door
-pickupObjects:
+features: ledger, pack
+pickupObjects: rusty_key

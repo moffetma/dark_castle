@@ -5,6 +5,6 @@ north: kitchen
 south: none
 east: bailey
 west: moat
-visited: False
+visited: True
 features: tattered_clothing, dresser
 pickupObjects: lamp

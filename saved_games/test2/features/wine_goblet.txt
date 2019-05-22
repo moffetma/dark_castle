@@ -1,0 +1,4 @@
+name: wine_goblet
+obvsText:
+actionText:
+allowedActions: drink

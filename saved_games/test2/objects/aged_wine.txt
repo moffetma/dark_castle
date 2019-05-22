@@ -1,0 +1,8 @@
+name: aged_wine
+roomText:
+obvsText:
+effectText:
+roomWithEffect:
+actionText: 
+allowedActions: drink
+dropped: False

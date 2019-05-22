@@ -1,0 +1,10 @@
+name: scribes_room
+longForm: This is the longform description
+shortForm: This is the shortform description
+north: none
+south: ballroom
+east: chapel
+west: throne_room
+visited: False
+features: chess_board, scroll
+pickupObjects: mirror

@@ -1,0 +1,4 @@
+name: dresser
+obvsText:
+actionText:
+allowedActions: open, push

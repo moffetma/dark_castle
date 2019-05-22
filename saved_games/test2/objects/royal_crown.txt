@@ -1,0 +1,8 @@
+name: royal_crown
+roomText:
+obvsText:
+effectText:
+roomWithEffect:
+actionText: 
+allowedActions:
+dropped: False
