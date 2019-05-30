@@ -5,6 +5,6 @@ north: chapel
 south: none
 east: none
 west: ballroom
-visited: False
+visited: True
 features: bookshelf, desk
 pickupObjects:

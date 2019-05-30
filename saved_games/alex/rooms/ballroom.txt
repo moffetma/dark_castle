@@ -5,6 +5,6 @@ north: scribes_room
 south: none
 east: library
 west: great_hall
-visited: False
+visited: True
 features: ball_gown, violin
 pickupObjects:
