@@ -1,4 +1,0 @@
-name: wooden_sign
-obvsText:
-actionText:
-allowedActions: read

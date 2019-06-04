@@ -1,4 +1,0 @@
-name: altar
-obvsText:
-actionText:
-allowedActions: push

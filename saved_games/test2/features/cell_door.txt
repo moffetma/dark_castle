@@ -1,4 +1,0 @@
-name: cell_door
-obvsText:
-actionText:
-allowedActions: push

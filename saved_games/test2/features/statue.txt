@@ -1,4 +1,0 @@
-name: statue
-obvsText:
-actionText:
-allowedActions: push

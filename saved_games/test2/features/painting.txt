@@ -1,4 +1,0 @@
-name: painting
-obvsText:
-actionText:
-allowedActions:

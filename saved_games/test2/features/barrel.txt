@@ -1,4 +1,0 @@
-name: barrel
-obvsText:
-actionText:
-allowedActions: open

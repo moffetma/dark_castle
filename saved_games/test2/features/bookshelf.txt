@@ -1,4 +1,0 @@
-name: bookshelf
-obvsText:
-actionText:
-allowedActions: read

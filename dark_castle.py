@@ -3,7 +3,7 @@ import gameState
 import room 
 import obj 
 import sys 
-
+from parser import Parse
 playerIsAlive = True 
 gameWon = False 
 
@@ -22,7 +22,6 @@ def getGametype():
 
 def moveRoom(roomName):
 	myGameState.currentRoom.loadRoom(gameName, roomName)
-	print(myGameState.currentRoom.name)
 	if myGameState.currentRoom.visited == False:
 		print(myGameState.currentRoom.longForm)
 	else:
@@ -35,11 +34,19 @@ def moveRoom(roomName):
 
 	myGameState.currentRoom.markVisited(gameName)
 
-def goToRoom(direction):
-	if getattr(myGameState.currentRoom, direction) == "none":
-		print("You can't go that way")
+def goToRoom(direction, room):
+	if direction is not None:
+		if getattr(myGameState.currentRoom, direction.lower()) == "none":
+			print("You can't go that way")
+			return
+		else:
+			moveRoom(getattr(myGameState.currentRoom, direction))
+			return
+	if hasattr(myGameState.currentRoom, room.lower()):
+		moveRoom(getattr(myGameState.currentRoom, room.lower()))
 	else:
-		moveRoom(getattr(myGameState.currentRoom, direction))
+		print("You can't go to that room")	
+	
 
 def look():
 	print(myGameState.currentRoom.longForm)
@@ -68,27 +75,30 @@ else:
 		print("No game with that name exists!")
 		gameName = input("Enter the saved game name to load: ")
 
-
 moveRoom(myGameState.currentRoom.name)
-
 
 while (playerIsAlive == True and gameWon == False): 
 
 	command = input("> ")
+	parser = Parse()
+	action, room, direction, item, objects = parser.parse_user_input(command)
 
-	myCommand = command.lower()
+	if (action is not None):
+		action = action.lower()
+	if (action == 'go') :
+		if (room is not None or direction is not None):
+			goToRoom(direction, room)
 
-	while(myCommand != 'north' and myCommand != 'south' and myCommand != 'east' and myCommand != 'west' and myCommand != 'look' and myCommand!='quit'):
-		print("I don't understand that")
-		myCommand = input("> ")
-		myCommand = myCommand.lower()
-
-	if(myCommand == 'north' or myCommand == 'south' or myCommand == 'east' or myCommand == 'west'):
-		goToRoom(myCommand)
-
-	elif myCommand == 'look':
+	elif (action == 'look'):
 		look()
 	
-	elif myCommand == 'quit':
+	elif action == 'quit':
 		exit()
+
+	elif (action is None and room is None and direction is None and item is None and objects is None):
+		print("I don't understand that")
+
+	elif (room is None and direction is None and item is None and objects is None):
+		print("I don't understand that")
+
 

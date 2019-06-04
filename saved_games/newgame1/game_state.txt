@@ -1,0 +1,3 @@
+name: newgame1
+currentRoom: castle_gate
+inventory:

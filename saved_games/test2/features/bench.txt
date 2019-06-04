@@ -1,4 +1,0 @@
-name: bench
-obvsText:
-actionText:
-allowedActions: sit

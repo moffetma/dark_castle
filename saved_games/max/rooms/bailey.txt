@@ -5,6 +5,6 @@ north: great_hall
 south: castle_gate
 east: barracks
 west: servants_quarters
-visited: False
+visited: True
 features: plaque, bench
 pickupObjects:

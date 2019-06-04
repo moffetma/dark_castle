@@ -1,4 +1,0 @@
-name: tattered_clothing
-obvsText:
-actionText:
-allowedActions:

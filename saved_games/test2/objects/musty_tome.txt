@@ -1,8 +1,0 @@
-name: musty_tome
-roomText:
-obvsText:
-effectText:
-roomWithEffect:
-actionText: 
-allowedActions: read
-dropped: False

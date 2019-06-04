@@ -1,4 +1,0 @@
-name: chest
-obvsText:
-actionText:
-allowedActions: open

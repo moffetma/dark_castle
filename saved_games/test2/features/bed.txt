@@ -1,4 +1,0 @@
-name: bed
-obvsText:
-actionText:
-allowedActions: sit

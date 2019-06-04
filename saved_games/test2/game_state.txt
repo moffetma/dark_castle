@@ -1,3 +1,0 @@
-name: test2
-currentRoom: castle_gate
-inventory:

@@ -1,4 +1,0 @@
-name: dirt_mound
-obvsText:
-actionText:
-allowedActions: dig

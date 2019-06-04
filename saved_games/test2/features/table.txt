@@ -1,4 +1,0 @@
-name: table
-obvsText:
-actionText:
-allowedActions: push, sit

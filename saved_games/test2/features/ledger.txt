@@ -1,4 +1,0 @@
-name: ledger
-obvsText:
-actionText:
-allowedActions: read

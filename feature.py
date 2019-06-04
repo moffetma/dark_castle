@@ -22,7 +22,7 @@ class Feature:
             inputFeature = open(featurePath, 'r')
             for line in inputFeature:
                 if 'actionText' in line:
-                    words = re.split("[:,]+", line)
+                    words = re.split("[:]+", line)
                     words = [x.strip() for x in words]
                     counter = 1
                     featureData = []
@@ -44,13 +44,3 @@ class Feature:
                     words = [x.strip() for x in words]
                     featureData = words[1]
                 setattr(self, words[0], featureData)
-
-""" myFeature = Feature()
-
-myFeature.loadFeature('alex', 'testfeature')
-
-print myFeature
-
-for x, y in myFeature.actionText:
-    if x == 'push':
-        print y """

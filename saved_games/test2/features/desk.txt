@@ -1,4 +1,0 @@
-name: desk
-obvsText:
-actionText:
-allowedActions: sit

@@ -1,4 +1,0 @@
-name: violin
-obvsText:
-actionText:
-allowedActions: play

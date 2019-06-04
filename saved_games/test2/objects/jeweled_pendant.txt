@@ -1,8 +1,0 @@
-name: jeweled_pendant
-roomText:
-obvsText:
-effectText:
-roomWithEffect:
-actionText: 
-allowedActions:
-dropped: False

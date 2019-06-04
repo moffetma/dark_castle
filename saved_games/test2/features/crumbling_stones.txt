@@ -1,4 +1,0 @@
-name: crumbling_stones
-obvsText:
-actionText:
-allowedActions:

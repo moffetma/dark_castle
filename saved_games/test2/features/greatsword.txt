@@ -1,4 +1,0 @@
-name: greatsword
-obvsText:
-actionText:
-allowedActions:
