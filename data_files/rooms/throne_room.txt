@@ -1,10 +1,10 @@
 name: throne_room
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: You enter the Throne Room. At the center of the room is the large, ominous throne. It sits upon a dias a few feet high, with a set of small steps leading up to it. It is truly magnificent. Large, tattered tapestries drape the walls of the room. Behind the throne you notice an ornate statue on a large pillar. To the east is the Scribes Room and to the west is the Kings Bedchambers. On the southern side is the doorway to the Great Hall.
+shortForm: The magnificent throne sits at the center of the room, with a curious statue placed behind the throne. To the east is the Scribes Room and to the west is the Kings Bedchambers. To the south is the Great Hall.
 north: hidden_chamber
 south: great_hall
 east: scribes_room
 west: kings_bedchambers
 visited: False
 features: throne, statue
-pickupObjects: royal_crown
+pickupObjects:

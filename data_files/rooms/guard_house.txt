@@ -1,6 +1,6 @@
 name: guard_house
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: You enter a cramped space, the Guard House. At most 2 or 3 men could have fit in here at one time. You notice a dusty ledger on the desk and a pack leaning against the wall. A northern doorway exists into the Barracks, where the Kingsguard lived.
+shortForm: You see a dusty ledger on the desk of the Guard House and a pack leaning against the wall. To the north is the exit to the Barracks.
 north: barracks
 south: none
 east: none

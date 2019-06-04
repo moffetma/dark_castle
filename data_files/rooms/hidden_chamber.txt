@@ -1,6 +1,6 @@
 name: hidden_chamber
-longForm: You win!
-shortForm: This is the shortform description
+longForm: As you enter the chamber, what you see in front of you leaves you speechless. Piles and piles of treasure lay before you. Gold, jewels, ornaments, chests, and more. Congratulations, you have found the hidden treasure.
+shortForm: As you enter the chamber, what you see in front of you leaves you speechless. Piles and piles of treasure lay before you. Gold, jewels, ornaments, chests, and more. Congratulations, you have found the hidden treasure.
 north: none
 south: throne_room
 east: none

@@ -1,6 +1,6 @@
 name: servants_quarters
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: In the middle of the Servants Quarters you notice a large pile of tattered clothing. A dresser stands on the west side of the room. To the north you see the entrance to the Kitchen, and back east you see the Bailey entrance.
+shortForm: The pile of tattered clothing is interesting. A lone dresser stands on the west side of the room. To the north is the Kitchen
 north: kitchen
 south: none
 east: bailey

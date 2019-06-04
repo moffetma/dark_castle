@@ -1,6 +1,6 @@
 name: wine_cellar
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: You climb down the ladder into wine cellar. The wall is line with a wine rack and in the corner you see a large barrel. Many of the bottles are cracked or broken. The only way out is back up the ladder to the east.
+shortForm: A wine rack lines the wall of the wine cellar, and a large barrel sits in the corner. The only way out is back up the ladder to the east.
 north: none
 south: none
 east: kitchen

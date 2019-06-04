@@ -1,6 +1,6 @@
 name: ballroom
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: You enter the magnificent Ballroom. After the large feasts in the Great Hall, guests would fill the Ballroom for any evening of dancing and partying. In the middle of the dance floor you notice an abandoned ball gown. Across the dance floor where the musicians played was a lone violin. To the east is the entrance to the Library and to the north is the Scribes Room. The west door leads to the Great Hall.
+shortForm: In the middle of the dance floor you see an abandoned ball gown. Across the dance floor you see a lone violin. To the east is the entrance to the Library, and to the north is the Scribes Room. The west door leads to the Great Hall.
 north: scribes_room
 south: none
 east: library

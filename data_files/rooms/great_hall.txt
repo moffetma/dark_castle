@@ -1,6 +1,6 @@
 name: great_hall
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: You enter the Great Hall. Long tables and benches fill the room. Plates and goblets are thrown all over. The walls are lined with magnificent tapestries and paintings. Many a great feasts must have been held here. A large painting catches your eye across the room. At the head of the middle table, you see a beautiful wine goblet inlaid with gemstones. To the north you see the grand entrance to the Throne Room. To the east is the Ballroom and to the west the Kitchen. Back south leads you to the Bailey.
+shortForm: You see the extravagant wine goblet at the head of the large table, and a beautiful painting across the room. To the north is the Throne Room. The eastern side doorway leads to the Ballroom, and to the west if the Kitchen. Back south is the Bailey.
 north: throne_room
 south: bailey
 east: ballroom

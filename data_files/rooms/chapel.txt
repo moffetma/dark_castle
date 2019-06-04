@@ -1,6 +1,6 @@
 name: chapel
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: As you enter the chapel is you see pews scattered and overturned throughout the room. The pews face a magnificent golden altar. It's a wonder this altar hasn't been ransacked from the castle already. To the south you see the doorway to the Library. On the eastern side behind the altar is a spiral staircase, leading the Observatory. On the eastern wall is the door to the Scribes Room.
+shortForm: A large golden altar sits at the head of the room, with overturned and scattered pews throughout the room. To the south is the doorway to the Library. Behind the altar to the east is a spiral staircase leading to the Observatory. East leads to the Scribes Room.
 north: none
 south: library
 east: observatory

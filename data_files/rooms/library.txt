@@ -1,6 +1,6 @@
 name: library
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: The walls of the library are lined with grand floor to ceiling book shelves. It appears many of the books have been ransacked, but few large tomes remain sparsely along the shelves. An overturned desk is in the middle of the library, along with a bookshelf. To the north is the Chapel, and back east is the Ballroom.
+shortForm: In the middle of the Library you see an overturned desk and bookshelf. To the north is the Chapel, and back east is the Ballroom.
 north: chapel
 south: none
 east: none

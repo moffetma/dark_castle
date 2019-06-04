@@ -1,6 +1,6 @@
 name: castle_gate
-longForm: Welcome adventurer. Through the mist you see a full moon in the distance. The bright moon is illuminating an ominous structure. In front of you stands a dark castle. Ancient and abandoned, treasure lies hidden deep within for those brave enough to enter. To the north through the gates you see the Bailey, and to the eastern side you see the entrance to the Guard House. Do you dare enter?
-shortForm: The castle gate looms in front of you. To the north through the gates you see the Bailey and to the east the entrance to the Guard House.
+longForm: Welcome adventurer. Through the mist you see a full moon in the distance. The bright moon is illuminating an ominous structure. In front of you stands a dark castle. Ancient and abandoned, treasure lies hidden deep within for those brave enough to enter. A wooden sign marks the entrance and to the north through the gates you see the Bailey. Across the bridge full of crumbling stones you see the entrance to the Guard House on the eastern side. Do you dare enter?
+shortForm: The castle gate looms in front of you. To the north through the gates you see the Bailey and to the east the entrance to the Guard House. A wooden sign marks the entrance and you see crumbling stones across the bridge.
 north: bailey
 south: none
 east: guard_house

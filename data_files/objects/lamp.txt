@@ -1,8 +1,8 @@
 name: lamp
-roomText:
-obvsText:
-effectText:
-roomWithEffect:
-actionText: 
-allowedActions:
+roomText: You see a lamp sitting on top of the dresser. Maybe it could come in handy?
+obvsText: A simple oil lamp, maybe this could illuminate a part of the castle?
+effectText: The lamp illuminates the dark dungeon. Through a cell door you see a long forgotten prisoner, reduced to nothing but bones. The skeleton sits ominously along the wall.
+roomWithEffect: dungeon
+actionText: light, You light the lamp with a spare flint and steel you always carry. A flame bursts to life.
+allowedActions: light
 dropped: False

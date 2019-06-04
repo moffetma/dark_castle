@@ -1,6 +1,6 @@
 name: kings_bedchambers
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: Within the Kings Bedchambers you see a large bed, complete with grand frame and large drawing curtains. The room is quite large and contains a ransacked dresser, and a desk with a journal. Next to the bed hangs a large portrait of the long forgotten king and his family. A tulip is in the queen's hand. To the east is the entrance to the Throne Room.
+shortForm: In the Kings Bedchambers you see the large bed the King slept in, as well as a desk holding a small journal. To the east is the entrance to the Throne Room.
 north: kings_gardens
 south: none
 east: throne_room

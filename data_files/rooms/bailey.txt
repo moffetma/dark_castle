@@ -1,6 +1,6 @@
 name: bailey
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: You enter through the castle gate into the Bailey. It is a large, open, grassy area inside the walls of the castle. Debris crowds the area. A bench stands alone in this courtyard. On the northern wall you notice a plaque, next to a doorway leading to the Great Hall. To the east is an entrance to the Barracks, and the west appears to be the Servants Quarters.
+shortForm: In the Bailey, a bench stands alone and you notice a plaque on the northern wall. To the east is the Barracks, and to the west the Servants Quarters. Behind you looms the Castle Gate.
 north: great_hall
 south: castle_gate
 east: barracks

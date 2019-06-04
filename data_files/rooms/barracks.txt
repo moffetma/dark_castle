@@ -1,6 +1,6 @@
 name: barracks
-longForm: This is the longform description
-shortForm: This is the shortform description
+longForm: In the barracks you see a dozen beds lined up against the wall. Armor and weapons are strewn across the room in disarray. What happened at this castle? You see a greatsword propped up against a ornate chest. To the east, you see stairs leading down towards the dungeon. The west exits to the Bailey.
+shortForm: A greatsword and chest can be seen through the mess. To the east are stairs down to the dungeon, and to the west is the Bailey. Going south is the Guard House.
 north: none
 south: guard_house
 east: dungeon
