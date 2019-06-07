@@ -22,10 +22,12 @@ def getGametype():
 
 def moveRoom(roomName):
 	myGameState.currentRoom.loadRoom(gameName, roomName)
+	
 	if myGameState.currentRoom.visited == False:
 		print(myGameState.currentRoom.longForm)
 	else:
 		print(myGameState.currentRoom.shortForm)
+
 	for i in range (len(myGameState.currentRoom.pickupObjects)):
 		if myGameState.currentRoom.pickupObjects[i].name != "" and myGameState.currentRoom.pickupObjects[i].name[-1] != 's':
 			print("You see a " + myGameState.currentRoom.pickupObjects[i].name + " here")
@@ -55,6 +57,39 @@ def look():
 			print("You see a " + myGameState.currentRoom.pickupObjects[i].name + " here")
 		else:
 			print("You see some " + myGameState.currentRoom.pickupObjects[i].name + " here")
+	print("Your inventory:")
+	for i in range(len(myGameState.inventory)):
+		print(myGameState.inventory[i].name)
+
+
+def take(objects):
+
+	for i in myGameState.currentRoom.pickupObjects:
+		if i.name == objects:
+			myGameState.pickupItemInRoom(objects)
+			print("You take the " + objects)
+			return
+	
+	for j in myGameState.currentRoom.features:
+		
+		if objects in parser.items and j.name == parser.items[objects]:
+			print("You can't take that")
+			return 
+
+	if objects[-1] != 's':
+		print ("There is no " + str(objects) + " to take")
+	else:
+		print ("There are no " + str(objects) + " to take")
+
+def drop(objects):
+	for i in myGameState.inventory:
+		if i.name == objects:
+			myGameState.dropItemInRoom(objects)
+			print(objects + " dropped")
+			return 
+	print("You aren't carrying that")
+
+### MAIN GAME ### 
 
 title_screen = "dark_castle_title.txt"
 
@@ -91,6 +126,12 @@ while (playerIsAlive == True and gameWon == False):
 
 	elif (action == 'look'):
 		look()
+
+	if (action == 'take'):
+		take(objects)
+
+	if (action == 'drop'):
+		drop(objects)
 	
 	elif action == 'quit':
 		exit()

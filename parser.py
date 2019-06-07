@@ -225,10 +225,19 @@ class Parse:
       if cardinal_direction is None and room is None:
         return None, None, None, None, None
 
+
     objects = self.match_noun(word_list, self.objects)
     item = self.match_noun(word_list, self.items)
 
-    return cmd, None, None, item, objects
+    # testing parser refining 
+    if objects == None or item == None:
+      #for items in word_list:
+      word_list = " ".join(word_list)
+
+      return cmd, None, None, word_list, word_list 
+    
+    else:
+      return cmd, None, None, item, objects
 
   def match_noun(self, user_input_list, reference_list):
     number_of_user_input_elements = len(user_input_list)
@@ -285,17 +294,17 @@ class Parse:
     else:
       return False
 
-# def main():
-#   parser = Parse()
-#   while True:
-#     prompt = input("What Move Would You Like to Do? ")
-#     if prompt ==  "q":
-#       break
-#     action, room, direction, room_item, objects = parser.parse_user_input(prompt)
-#     print("This is the action: ", action)
-#     print("This is the direction: ", direction)
-#     print("This is the room: ", room) 
-#     print("This is the room_item: ", room_item) 
-#     print("This is the object: ", objects) 
+#def main():
+#  parser = Parse()
+#  while True:
+#    prompt = input("What Move Would You Like to Do? ")
+#    if prompt ==  "q":
+#      break
+#    action, room, direction, room_item, objects = parser.parse_user_input(prompt)
+#    print("This is the action: ", action)
+#    print("This is the direction: ", direction)
+#    print("This is the room: ", room) 
+#    print("This is the room_item: ", room_item) 
+#    print("This is the object: ", objects) 
 
-# main()
+#main()

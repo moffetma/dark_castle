@@ -1,0 +1,10 @@
+name: kitchen
+longForm: You enter the large kitchen. Many stone tables, stoves, and racks line the walls and floor. Much space was needed for the large feasts held in the Great Hall. One table in particular is a bloody mess. A stove looks like it was recently lit. On the west side of the room you notice a cellar door leading to the wine cellar. Back east is the entrance to the Great Hall, and to the south is the Servants Quarters. Many of the servants must have been stationed in the kitchen.
+shortForm: The bloody table sits near the center of the room. A recently lit stove is a curiosity in the room. To the west is the Wine Cellar, and to the east is the Great Hall. The south doorway leads to the Servants Quarters.
+north: none
+south: servants_quarters
+east: great_hall
+west: wine_cellar
+visited: False
+features: table, stove
+pickupObjects: mutton

@@ -1,0 +1,3 @@
+name: test4
+currentRoom: moat
+inventory: lamp, , royal_crown, mirror,

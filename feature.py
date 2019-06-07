@@ -1,5 +1,6 @@
 import re
 import os
+from colorFixer import fixColor
 
 class Feature:
     def __init__(self, name='', obvsText='', actionText='', allowedActions=''):
@@ -29,7 +30,7 @@ class Feature:
                     if len(words) > 1:
                         for x in words[1:]:
                             if counter & 1 and x != '':
-                                featureData.append((x, words[counter+1]))
+                                featureData.append((x, fixColor(words[counter+1])))
                             counter += 1
                 elif 'allowedActions' in line:
                     words = re.split("[:,]+", line)
@@ -42,5 +43,5 @@ class Feature:
                 else:
                     words = re.split("[:]+", line)
                     words = [x.strip() for x in words]
-                    featureData = words[1]
+                    featureData = fixColor(words[1])
                 setattr(self, words[0], featureData)

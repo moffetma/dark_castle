@@ -1,0 +1,10 @@
+name: moat
+longForm: You step out into the fresh air and see the Moat. This must have been a secret entrance for the Servants. You see a grave marked by a small wooden cross to your side. Down a short walkway is the water of the moat. To the east is the entrance to the Servants Quarters.
+shortForm: You walk out to the Moat and notice the grave to your side, and the water down the path. Back to the east is the Servants Quarters.
+north: none
+south: none
+east: servants_quarters
+west: none
+visited: True
+features: grave, water
+pickupObjects:

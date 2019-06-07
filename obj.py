@@ -26,7 +26,7 @@ class Obj:
             inputObject = open(objectPath, 'r')
             for line in inputObject:
                 if 'actionText' in line:
-                    words = re.split("[:,]+", line)
+                    words = re.split("[:]+", line)
                     words = [x.strip() for x in words]
                     counter = 1
                     objectData = []
@@ -54,9 +54,3 @@ class Obj:
                     words = [x.strip() for x in words]
                     objectData = words[1]
                 setattr(self, words[0], objectData)
-
-""" myObject = Obj()
-
-myObject.loadObject('alex', 'testobject')
-
-print myObject """

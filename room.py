@@ -2,9 +2,10 @@ import re
 import os
 from feature import Feature
 from obj import Obj
+from colorFixer import fixColor
 
 class Room:
-    def __init__(self, name='', longForm='', shortForm='', north='', south='', east='', west='', visited='', features='', pickupObjects=''):
+    def __init__(self, name='', longForm='', shortForm='', north='', south='', east='', west='', up='', down='', visited='', features='', pickupObjects=''):
         self.name = name
         self.longForm = longForm
         self.shortForm = shortForm
@@ -12,6 +13,8 @@ class Room:
         self.south = south
         self.east = east
         self.west = west
+        self.up = up
+        self.down = down
         self.visited = visited
         self.features = features
         self.pickupObjects = pickupObjects
@@ -58,7 +61,7 @@ class Room:
                         else:
                             roomData = False
                     else:
-                        roomData = words[1]
+                        roomData = fixColor(words[1])
                 setattr(self, words[0], roomData)
     
     def markVisited(self, gameName):
@@ -72,7 +75,6 @@ class Room:
             outputRoom = open(roomPath, 'w')
             outputRoom.write(data)
             self.visited = True
-
 
 
 

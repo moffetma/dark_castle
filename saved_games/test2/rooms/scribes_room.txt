@@ -1,0 +1,10 @@
+name: scribes_room
+longForm: You enter the Scribes Room. Paper is scattered across the floors, it appears someone left in a hurry. On one of the many desks you notice a bundled scroll. An old chess board is placed in the corner. Through the room to the east is the Chapel, and to the south is the Ballroom. Back to the west is the Throne Room.
+shortForm: A scroll sits on one of the many desks, and a chess board is found in the corner of the room. To the east is the Chapel, and to the south is the Ballroom. Back east is the Throne Room.
+north: none
+south: ballroom
+east: chapel
+west: throne_room
+visited: False
+features: chess_board, scroll
+pickupObjects:
